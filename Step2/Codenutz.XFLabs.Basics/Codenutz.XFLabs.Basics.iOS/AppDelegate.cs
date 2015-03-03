@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using Codenutz.XFLabs.Basics.ViewModel;
+using Foundation;
 using UIKit;
 using XLabs.Ioc;
 using XLabs.Platform.Device;
