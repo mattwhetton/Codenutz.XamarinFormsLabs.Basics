@@ -3,10 +3,11 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
+using Codenutz.XFLabs.Basics.WinPhone.Resources;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using Xamarin.Forms.Labs.Services;
-using Xamarin.Forms.Labs.WP8;
+using XLabs.Forms;
+using XLabs.Ioc;
 
 namespace Codenutz.XFLabs.Basics.WinPhone
 {

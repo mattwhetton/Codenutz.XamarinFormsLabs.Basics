@@ -1,7 +1,7 @@
 ﻿using Codenutz.XFLabs.Basics.View;
 using Codenutz.XFLabs.Basics.ViewModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Labs.Mvvm;
+using XLabs.Forms.Mvvm;
 
 namespace Codenutz.XFLabs.Basics
 {
@@ -10,7 +10,7 @@ namespace Codenutz.XFLabs.Basics
 		public App()
 		{
 			RegisterViews();
-			MainPage = new NavigationPage(ViewFactory.CreatePage<MainViewModel>());
+			MainPage = new NavigationPage((Page)ViewFactory.CreatePage<MainViewModel, MainView>());
 		}
 
 		private void RegisterViews()

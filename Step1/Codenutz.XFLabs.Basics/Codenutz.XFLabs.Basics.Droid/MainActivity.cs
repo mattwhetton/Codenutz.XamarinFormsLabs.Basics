@@ -1,8 +1,8 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Xamarin.Forms.Labs.Droid;
-using Xamarin.Forms.Labs.Services;
+using XLabs.Forms;
+using XLabs.Ioc;
 
 namespace Codenutz.XFLabs.Basics.Droid
 {

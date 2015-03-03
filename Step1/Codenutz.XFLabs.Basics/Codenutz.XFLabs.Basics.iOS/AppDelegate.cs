@@ -1,6 +1,6 @@
 ﻿using Foundation;
 using UIKit;
-using Xamarin.Forms.Labs.Services;
+using XLabs.Ioc;
 
 namespace Codenutz.XFLabs.Basics.iOS
 {
@@ -8,7 +8,7 @@ namespace Codenutz.XFLabs.Basics.iOS
 	// User Interface of the application, as well as listening (and optionally responding) to 
 	// application events from iOS.
 	[Register("AppDelegate")]
-	public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
+	public partial class AppDelegate : XLabs.Forms.XFormsApplicationDelegate
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{

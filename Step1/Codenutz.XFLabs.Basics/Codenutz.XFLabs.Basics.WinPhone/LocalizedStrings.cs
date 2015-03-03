@@ -1,4 +1,6 @@
-﻿namespace Codenutz.XFLabs.Basics.WinPhone
+﻿using Codenutz.XFLabs.Basics.WinPhone.Resources;
+
+namespace Codenutz.XFLabs.Basics.WinPhone
 {
 	/// <summary>
 	/// Provides access to string resources.

@@ -1,6 +1,6 @@
 ﻿namespace Codenutz.XFLabs.Basics.ViewModel
 {
-	public class MainViewModel : Xamarin.Forms.Labs.Mvvm.ViewModel
+	public class MainViewModel : XLabs.Forms.Mvvm.ViewModel
 	{
 		private string _message;
 
