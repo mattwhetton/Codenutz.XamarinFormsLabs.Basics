@@ -16,3 +16,11 @@ The set-up is complete for Android and iOS, although there is still and outstand
 - ViewFactory
 - SimpleContainer (for Inversion of Control / Resolver)
 
+##Step 2 Dependency Injection
+
+Step 2 builds on step 1 but also includes implementation and usage of the SimpleContainer for dependency injection. The solution also gets device specific information via the IDevice interface. 
+
+###Features Included
+
+- SimpleContainer for Dependency Injection
+- Usage of the IDevice implementation for Android, iOS and Windows Phone
