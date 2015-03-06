@@ -8,7 +8,7 @@ The first solution has a basic Xamarin Forms Labs set-up with a XAML view, using
 
 The set-up is complete for Android and iOS, although there is still and outstanding issue with Xamarin Forms Labs preventing Windows Phone from building.
 
-###Features included
+####Features included
 
 - Basic Set-up
 - MVVM
@@ -20,7 +20,7 @@ The set-up is complete for Android and iOS, although there is still and outstand
 
 Step 2 builds on step 1 but also includes implementation and usage of the SimpleContainer for dependency injection. The solution also gets device specific information via the IDevice interface. 
 
-###Features Included
+####Features Included
 
 - SimpleContainer for Dependency Injection
 - Usage of the IDevice implementation for Android, iOS and Windows Phone
