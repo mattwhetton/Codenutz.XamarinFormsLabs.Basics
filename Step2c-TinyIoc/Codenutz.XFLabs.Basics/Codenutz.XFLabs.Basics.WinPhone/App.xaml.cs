@@ -7,10 +7,9 @@ using Codenutz.XFLabs.Basics.ViewModel;
 using Codenutz.XFLabs.Basics.WinPhone.Resources;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using Ninject;
+using TinyIoC;
 using XLabs.Forms;
 using XLabs.Ioc;
-using XLabs.Ioc.Ninject;
 using XLabs.Platform.Device;
 
 namespace Codenutz.XFLabs.Basics.WinPhone
@@ -41,16 +40,18 @@ namespace Codenutz.XFLabs.Basics.WinPhone
 
 		private void SetIoc()
 		{
-			var standardKernel = new StandardKernel();
-			var resolverContainer = new NinjectContainer(standardKernel);
+			var container = TinyIoCContainer.Current;
 
-			standardKernel.Bind<IDevice>().ToConstant(WindowsPhoneDevice.CurrentDevice);
-			standardKernel.Bind<MainViewModel>().ToSelf();
+			container.Register<IDevice>(WindowsPhoneDevice.CurrentDevice);
 
+			//Note: TinyIoc will automatically resolve concrete types with any registration.
+			// We can choose to register if we want, but in this case its unnecessary
+			//container.Register<MainViewModel>();
+			
 			var app = new XFormsAppWP();
 			app.Init(this);
 
-			Resolver.SetResolver(resolverContainer.GetResolver());
+			Resolver.SetResolver(new XLabs.Ioc.TinyIOC.TinyResolver(container));
 		}
 
 
