@@ -32,7 +32,6 @@ namespace Codenutz.XFLabs.Basics.iOS
 			var resolverContainer = new NinjectContainer(standardKernel);
 
 			standardKernel.Bind<IDevice>().ToConstant(AppleDevice.CurrentDevice);
-			standardKernel.Bind<MainViewModel>().ToSelf();
 
 			Resolver.SetResolver(resolverContainer.GetResolver());
 		}

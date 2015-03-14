@@ -44,9 +44,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
-    </Reference>
     <Reference Include="ExifLib">
       <HintPath>..\..\packages\ExifLib.PCL.1.0.0\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+MonoAndroid10+MonoTouch10\ExifLib.dll</HintPath>
     </Reference>
@@ -65,9 +62,6 @@
     <Reference Include="XLabs.Ioc">
       <HintPath>..\..\packages\XLabs.IoC.2.0.5540\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="XLabs.Ioc.Autofac">
-      <HintPath>..\..\packages\XLabs.IoC.Autofac.2.0.5540\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.Autofac.dll</HintPath>
     </Reference>
     <Reference Include="XLabs.Platform">
       <HintPath>..\..\packages\XLabs.Platform.2.0.5530\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Platform.dll</HintPath>

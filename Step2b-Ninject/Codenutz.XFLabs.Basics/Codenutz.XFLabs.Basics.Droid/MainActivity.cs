@@ -31,7 +31,6 @@ namespace Codenutz.XFLabs.Basics.Droid
 			var resolverContainer = new NinjectContainer(standardKernel);
 
 			standardKernel.Bind<IDevice>().ToConstant(AndroidDevice.CurrentDevice);
-			standardKernel.Bind<MainViewModel>().ToSelf();
 
 			Resolver.SetResolver(resolverContainer.GetResolver());
 		}

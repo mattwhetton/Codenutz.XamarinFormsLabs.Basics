@@ -29,7 +29,6 @@ namespace Codenutz.XFLabs.Basics.Droid
 			var container = new UnityContainer();
 
 			container.RegisterInstance<IDevice>(AndroidDevice.CurrentDevice);
-			container.RegisterType<MainViewModel>();
 
 			Resolver.SetResolver(new XLabs.Ioc.Unity.UnityResolver(container));
 		}

@@ -30,10 +30,6 @@ namespace Codenutz.XFLabs.Basics.Droid
 
 			container.Register<IDevice>(AndroidDevice.CurrentDevice);
 
-			//Note: TinyIoc will automatically resolve concrete types with any registration.
-			// We can choose to register if we want, but in this case its unnecessary
-			//container.Register<MainViewModel>();
-
 			Resolver.SetResolver(new XLabs.Ioc.TinyIOC.TinyResolver(container));
 		}
 	}

@@ -30,7 +30,6 @@ namespace Codenutz.XFLabs.Basics.iOS
 			var container = new UnityContainer();
 
 			container.RegisterInstance<IDevice>(AppleDevice.CurrentDevice);
-			container.RegisterType<MainViewModel>();
 
 			Resolver.SetResolver(new XLabs.Ioc.Unity.UnityResolver(container));
 		}

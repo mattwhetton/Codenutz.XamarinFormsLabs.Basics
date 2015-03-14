@@ -43,7 +43,6 @@ namespace Codenutz.XFLabs.Basics.WinPhone
 			var container = new UnityContainer();
 
 			container.RegisterInstance<IDevice>(WindowsPhoneDevice.CurrentDevice);
-			container.RegisterType<MainViewModel>();
 
 			var app = new XFormsAppWP();
 			app.Init(this);

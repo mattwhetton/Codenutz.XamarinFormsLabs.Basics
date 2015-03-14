@@ -45,7 +45,6 @@ namespace Codenutz.XFLabs.Basics.WinPhone
 			var resolverContainer = new NinjectContainer(standardKernel);
 
 			standardKernel.Bind<IDevice>().ToConstant(WindowsPhoneDevice.CurrentDevice);
-			standardKernel.Bind<MainViewModel>().ToSelf();
 
 			var app = new XFormsAppWP();
 			app.Init(this);

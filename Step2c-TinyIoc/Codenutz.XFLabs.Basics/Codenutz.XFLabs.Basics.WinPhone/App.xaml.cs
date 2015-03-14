@@ -44,10 +44,6 @@ namespace Codenutz.XFLabs.Basics.WinPhone
 
 			container.Register<IDevice>(WindowsPhoneDevice.CurrentDevice);
 
-			//Note: TinyIoc will automatically resolve concrete types with any registration.
-			// We can choose to register if we want, but in this case its unnecessary
-			//container.Register<MainViewModel>();
-			
 			var app = new XFormsAppWP();
 			app.Init(this);
 
