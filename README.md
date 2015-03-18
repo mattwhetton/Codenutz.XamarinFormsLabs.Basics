@@ -1,6 +1,6 @@
 # Codenutz.XamarinFormsLabs.Basics
 
-This project is a set of simple demonstration and starter projects for Xamarin Forms Labs.
+This project is a set of simple demonstration and starter projects for Xamarin Forms Labs. For more detailed coverage see http://www.codenutz.com/tag/xamarin-forms-labs/
 
 ##Step 1 XAML, MVVM & IOC
 
@@ -24,3 +24,12 @@ Step 2 builds on step 1 but also includes implementation and usage of the Simple
 
 - SimpleContainer for Dependency Injection
 - Usage of the IDevice implementation for Android, iOS and Windows Phone
+
+###Step 2(a-d) Dependency Injection Containers
+
+Steps 2a to 2d build on the core step 2 and include implementation of several dependency injection containers:
+
+a. Autofac
+b. Ninject
+c. TinyIoC
+d. Unity
