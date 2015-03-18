@@ -29,7 +29,7 @@ Step 2 builds on step 1 but also includes implementation and usage of the Simple
 
 Steps 2a to 2d build on the core step 2 and include implementation of several dependency injection containers:
 
-a. Autofac
-b. Ninject
-c. TinyIoC
-d. Unity
+- a. Autofac
+- b. Ninject
+- c. TinyIoC
+- d. Unity
